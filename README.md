@@ -17,7 +17,7 @@
 
 点击下方按钮下载最新安装包 (Windows):
 
-[![Download for Windows](https://img.shields.io/badge/Download-Windows_x64-blue?style=for-the-badge&logo=windows)](https://github.com/ArcueidBrunestudII/dimstar_ai/releases/download/v1.0.0/DimStar.AI.Setup.1.0.0.exe)
+[![Download for Windows](https://img.shields.io/badge/Download-Windows_x64-blue?style=for-the-badge&logo=windows)](https://github.com/ArcueidBrunestudII/dimstar_ai/releases/download/ai/DimStar.AI.Setup.1.0.0.exe)
 
 *(注：请将链接替换为您 GitHub 仓库的 Release 链接)*
 
