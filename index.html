@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DimStar 迭代式 AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- 聊天区域 -->
+        <div class="chat-area">
+            <div class="chat-header">
+                <h1>🌟 DimStar 迭代式 AI</h1>
+                <p>追求极致回复 · 多模型协作 · 迭代优化</p>
+            </div>
+
+            <div id="messages">
+                <div class="message assistant">
+                    <div class="message-role">🤖 DimStar</div>
+                    <div class="message-content">
+                        欢迎使用 DimStar 迭代式 AI！<br><br>
+                        我会使用多个 AI 模型协作，经过多轮迭代优化，为您提供极致的回复。<br><br>
+                        <strong>注意：</strong>由于需要多轮迭代和多模型评估，回复可能需要 <strong>5-15 分钟</strong>。
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <textarea id="input" rows="3" placeholder="输入您的问题... (Enter 发送)"></textarea>
+                <button id="send-btn">发送</button>
+            </div>
+        </div>
+
+        <!-- 侧边栏 -->
+        <div class="sidebar">
+            <div class="sidebar-section">
+                <h3>🔑 API 设置</h3>
+                <input type="password" id="api-key" placeholder="NVIDIA API Key">
+            </div>
+
+            <div class="sidebar-section">
+                <h3>⚙️ 参数</h3>
+                <input type="number" id="threshold" value="50" min="10" max="200" placeholder="调用阈值">
+            </div>
+
+            <div class="sidebar-section">
+                <h3>📊 统计</h3>
+                <div id="stats">
+                    <div>轮次: 0</div>
+                    <div>调用: 0</div>
+                    <div>质量: 0.00</div>
+                </div>
+            </div>
+
+            <div class="sidebar-section logs-section">
+                <h3>📜 实时日志</h3>
+                <div id="logs"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 脚本 -->
+    <script src="core/rate-limiter.js"></script>
+    <script src="core/api.js"></script>
+    <script src="core/agents.js"></script>
+    <script src="core/quality.js"></script>
+    <script src="core/evolve.js"></script>
+    <script src="core/engine.js"></script>
+    <script src="core/prompts.js"></script>
+    <script src="core/self-eval-engine.js"></script>
+    <script src="ui/chat.js"></script>
+</body>
+
+</html>
